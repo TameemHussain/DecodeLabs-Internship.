@@ -32,3 +32,17 @@ pip install pandas scikit-learn
 3. **Execute:** Run the following command to execute the pipeline:
    ```bash
 python classification_model.py
+
+#Project 3 Recomendation System
+Description
+This project implements an interactive movie recommendation engine using a weighted, content-based similarity algorithm. The system evaluates user-selected genres and moods against a curated movie catalog, assigning custom weights to distinct feature types (e.g., genre matches are heavily weighted relative to mood alignment) to compute a standardized similarity score. It filters movies based on custom IMDb thresholds and features a visual, text-based progress bar to represent match percentages. A resilient fallback system switches to a multi-scenario demonstration mode if user input is interrupted.
+
+#How to Run
+Prerequisites: Ensure you have Python 3 installed. This script relies entirely on standard libraries and does not require any external package installations.
+
+Open Terminal: Navigate to the folder containing your script (e.g., movie_recommender.py).
+
+Execute: Run the command below to launch the system:
+
+Bash
+python movie_recommender.py
