@@ -1,50 +1,30 @@
-# AI-Chatbot
+# Multi-Project Showcase: AI, ML, and Rule-Based Systems
 
-A simple rule-based Python chatbot that demonstrates core programming concepts: control flow, conditional logic, and interactive loops.
+Welcome to my central projects repository. This repository features three production-ready Python applications demonstrating core software engineering principles, machine learning pipelines, and recommendation systems.
 
-## Core Concepts Demonstrated
+---
 
-- **Interactive Loop:** A `while True` loop keeps the application active until an exit command is received.
-- **Case-Insensitive Input Processing:** `.strip().lower()` cleans user input to handle inputs like "Hello", "HELLO", or "  hello  ".
-- **Conditional Routing:** An `if-elif-else` control structure evaluates conditions to generate appropriate responses.
-- **Randomized Responses:** The `random.choice()` function selects dynamic greetings from a list of variations.
+## 🛠️ Project Portfolio
 
-## How to Run
+| # | Project Name | Tech Stack | Core Concept |
+|---|---|---|---|
+| 1 | [Simple Rule-Based Chatbot](#1-simple-rule-based-chatbot) | Python (Standard Library) | Control Flow, String Cleaning, Loops |
+| 2 | [Simple Classification Model using AI](#2-simple-classification-model-using-ai) | Python, Pandas, Scikit-Learn | Supervised ML, Feature Scaling, KNN Classifier |
+| 3 | [Content-Based Movie Recommendation System](#3-content-based-movie-recommendation-system) | Python (Standard Library) | Weighted Similarity Vectoring, Progress UI |
 
-1. Make sure Python 3 is installed.
-2. Open your terminal or Command Prompt.
-3. Run the script:
-   ```bash
-   python chatbot.py
-   ```
-4. Interact with the chatbot by typing `hello`, `hi`, or `exit`.
+---
 
-# Project 02 (Simple Classification Model using AI)
-Description
-This project implements a complete, end-to-end Machine Learning workflow using Python and scikit-learn to classify species from the classic Iris dataset. It handles data loading, splitting into training and testing sets, feature scaling via standardization, and trains a K-Nearest Neighbors (KNN) classifier. The project concludes by generating comprehensive evaluation metrics (Accuracy, Classification Report, and Confusion Matrix) and running a live inference test on a brand-new data sample.
+## 1. Simple Rule-Based Chatbot
 
-Prerequisites: Make sure you have Python 3 and the required dependencies installed. You can install them via terminal:
+A lightweight, interactive Python chatbot designed to showcase clean code architecture, deterministic state routing, and robust error/stream handling.
 
-Bash
-pip install pandas scikit-learn
+### Core Features
+- **Interactive Loop:** A resilient `while True` main execution loop.
+- **Case-Insensitive Input Processing:** `.strip().lower()` input sanitization to filter out whitespace and casing discrepancies.
+- **Randomized System Responses:** Utilizes `random.choice()` variations to dynamicize greeting sequences.
+- **Graceful Termination:** Intercepts system interrupts (`KeyboardInterrupt`, `EOFError`) and exit phrases to kill execution cleanly.
 
-# Project 03 AI based Recommendation System
-
-A content-based movie recommendation system written in Python that utilizes a weighted similarity matching algorithm to suggest films based on user-defined genres, moods, and rating preferences.
-
-## Features
-
-- **Weighted Matching Engine:** Calculates a normalized match score ($0.0$ to $1.0$) by giving distinct priorities to different categories (Genre match = 2 points, Mood match = 1.5 points)[cite: 4].
-- **Dynamic Threshold Filtering:** Excludes movies that fall below a user-specified minimum IMDb rating[cite: 4].
-- **Visual Terminal UI:** Displays recommendation match percentages using an elegant text-based progress bar (`████░░░░`)[cite: 4].
-- **Dual-Mode Execution:** Operates as an interactive command-line interface by default, with an automated fallback demo mode if the input stream is interrupted[cite: 4].
-
-## How to Run
-
-1. **Prerequisites:** Make sure you have Python 3 installed on your system. No external libraries are required.
-2. **Open Terminal:** Navigate to the folder containing the project files.
-3. **Run the Project:** Execute the script by running the following command verbatim:
+### How to Run
 ```bash
-   python "Project 3(Recomendation System).py"
-
+python chatbot.py
 
