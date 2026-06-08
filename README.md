@@ -28,7 +28,23 @@ Prerequisites: Make sure you have Python 3 and the required dependencies install
 Bash
 pip install pandas scikit-learn
 
-**Open Terminal:** Navigate to the directory containing your script (e.g., `classification_model.py`).
-3. **Execute:** Run the following command to execute the pipeline:
-   ```bash
+# Project 03 AI based Recommendation System
+
+A content-based movie recommendation system written in Python that utilizes a weighted similarity matching algorithm to suggest films based on user-defined genres, moods, and rating preferences.
+
+## Features
+
+- **Weighted Matching Engine:** Calculates a normalized match score ($0.0$ to $1.0$) by giving distinct priorities to different categories (Genre match = 2 points, Mood match = 1.5 points)[cite: 4].
+- **Dynamic Threshold Filtering:** Excludes movies that fall below a user-specified minimum IMDb rating[cite: 4].
+- **Visual Terminal UI:** Displays recommendation match percentages using an elegant text-based progress bar (`████░░░░`)[cite: 4].
+- **Dual-Mode Execution:** Operates as an interactive command-line interface by default, with an automated fallback demo mode if the input stream is interrupted[cite: 4].
+
+## How to Run
+
+1. **Prerequisites:** Make sure you have Python 3 installed on your system. No external libraries are required.
+2. **Open Terminal:** Navigate to the folder containing the project files.
+3. **Run the Project:** Execute the script by running the following command verbatim:
+```bash
+   python "Project 3(Recomendation System).py"
+
 
